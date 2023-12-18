@@ -21,7 +21,7 @@ public class ProductController {
     @GetMapping("/changement1")
     public ResponseEntity<?> getAllProduct()
     {
-        return new ResponseEntity<>(productservice.getAllProduct(), HttpStatus.OK);
+        return new ResponseEntity<>(productservice.getAllProduct(),OK);
     }
     @GetMapping("/id")
     public ResponseEntity<?> getProductById(@PathVariable Integer id )
