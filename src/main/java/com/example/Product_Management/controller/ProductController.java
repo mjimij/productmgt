@@ -23,7 +23,7 @@ public class ProductController {
     {
 
 
-        return new ResponseEntity<>(product);
+        return new ResponseEntity<>(OK);
 
     }
     @GetMapping("/id")
