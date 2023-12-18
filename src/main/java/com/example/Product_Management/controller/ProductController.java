@@ -18,10 +18,10 @@ public class ProductController {
         return new ResponseEntity<>(productservice.saveProduct(product),
                 HttpStatus.CREATED);
     }
-    @GetMapping("/changement1")
+    @GetMapping("/")
     public ResponseEntity<?> getAllProduct()
     {
-        return new ResponseEntity<>(productservice.getAllProduct(), HttpStatus.OK);
+        return new ResponseEntity<>(product);
     }
     @GetMapping("/id")
     public ResponseEntity<?> getProductById(@PathVariable Integer id )
